@@ -12,12 +12,11 @@ import (
 func Seeds(db *bun.DB) error {
 
 	seeder := []func(*bun.DB) error{
-		// mockUpSeed,
-		// organizeSeed,
-		// roleSeed,
-		// permissionSeed,
-		// holidaySeed,
-		// workShiftSeed,
+		organizeSeed,
+		roleSeed,
+		permissionSeed,
+		holidaySeed,
+		workShiftSeed,
 	}
 
 	for i := range seeder {
